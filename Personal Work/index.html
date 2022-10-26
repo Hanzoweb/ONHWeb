@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images\IMG_1052.jpeg" type="image/x-icon">
+    <title>ONHWeb</title>
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <div class="logo">
+                ONH<span>Web</span>
+            </div>
+            <ul id="sidemenu">
+                <img class="fas fa-times" src="icons/icon-close-menu.svg" onclick="closemenu()">
+                <li><a href="#header" >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="sub"><a href="#">Subscribe</a></li>
+            </ul>
+            <img class="fas fa-bars" src="icons/icon-menu.svg" onclick="openmenu()">
+        </nav>
+<!------------- HOME ------------>
+        <div class="header">
+            <p>Web Designer <span>& Developer</span></p>
+            <h1>My Name is <br> Osadebay Ray <span>Chukwuka</span></h1>
+        </div>
+    </div>
+<!------------- ABOUT ------------>
+    <div id="about">
+        <div class="con">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/IMG_1052.jpeg">
+                </div>
+                <div class="col2">
+                    <h1>About <span>Me</span></h1>
+                    <p>I am a Web Designer and fullstack Devloper. I can build and develop your websites with unique, user friendly and eye-catching designs. Websites i create are very interactive and responsive. I also maintain and Host the websites routinely. </p>
+                    <div class="tab">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick=" opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Web Development</span><br>Development of Your Websites</li>
+                            <li><span>Web Hosting & Maintainance</span><br>Hosting and Routine Maintanance of your Websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Web Development Training at Delta State TVEB Skills Aquisition Center</li>
+                            <li><span>2022</span><br>Web Design Training at Delta State TVEB Skills Aquisition Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------- Services ------------>
+    <div id="services">
+        <div class="con">
+            <h1>My Services</h1>
+            <div class="service-list">
+                <div class="list">
+                    <h2>Web <br><span>Design</span></h2>
+                    <p>I can design your websites with unique, user friendly and eye-catching designs</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="list">
+                    <h2>Web <br><span>Development</span></h2>
+                    <p>I can develop your brand or personal website.Websites i create are very interactive and responsive</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="list">
+                    <h2>Web <span>Hosting & Maintainance</span></h2>
+                    <p>I also maintain and Host the websites routinely.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------- PortFolio ------------>
+    <div id="portfolio">
+        <div class="con">
+            <h1>Work Available</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/uiuxnigeria-20221020-0001.jpg">
+                    <div class="layer">
+                        <h3>E-Commerce <span class="hov">Websites</span></h3>
+                        <p>Website for your shipping and shopping company, offering clients a wide range of products and brands to select from.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/uiuxnigeria-20221020-0002.jpg">
+                    <div class="layer">
+                        <h3>Company <span class="hov">Websites</span></h3>
+                        <p>Website for your company, telling potential clients about your company and offering a broader insight to how your company works.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/welovewebdesign-20221020-0001.jpg">
+                    <div class="layer">
+                        <h3>Brand <span class="hov">Websites</span></h3>
+                        <p>Website for your personal Brand, telling potential clients about your brand and services you offer.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="Works.html" class="btn">See More</a>
+        </div>
+    </div>
+<!------------- Contact ------------>
+    <div id="contact">
+        <div class="con">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p>Rayosadebay@gmail.com</p>
+                    <p>+234 811 513 7602</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/2348115137602"><img  class="social" src="icons/icon-facebook.svg"></a>
+                        <a href="https://www.instagram.com/p/CiBBvAkolh-/?igshid=YmMyMTA2M2Y="><img class="social" src="icons/icon-instagram.svg"></a>
+                        <a href="#"><img class="social" src="icons/icon-twitter.svg"></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Osadebay Ray Chukwuka</p>
+        </div>
+    </div>
+<!------------- JavaScript ------------>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "180px";
+        }
+        function closemenu(){
+            sidemeu.style.right = "0px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBRzj20bgJez_jqXl2jmFBbRlggqjvnCPlWaERu0N139m9qUpbAUCu2i5bPOkCe_7v/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
